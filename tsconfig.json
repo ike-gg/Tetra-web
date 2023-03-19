@@ -16,8 +16,9 @@
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "downlevelIteration": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/utils/Gradient.js"],
   "exclude": ["node_modules"]
 }
