@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import Hero from "@/components/sections/hero/Hero";
 import Stats from "@/components/sections/stats/Stats";
+import Features from "@/components/sections/features/Features";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +15,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col gap-12 mt-6 mb-96">
+      <main className="flex flex-col gap-20 mt-6 mb-96">
         <Hero />
         <Stats />
+        <Features />
       </main>
     </>
   );
