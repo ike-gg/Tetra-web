@@ -8,7 +8,7 @@ interface Props {
 
 const RootLayout: FC<Props> = ({ children }) => {
   return (
-    <motion.div className="max-w-screen-xl mx-auto px-4">
+    <motion.div className="max-w-screen-xl mx-auto  px-4 md:px-6">
       <Navbar />
       {children}
     </motion.div>
