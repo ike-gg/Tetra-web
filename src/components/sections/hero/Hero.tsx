@@ -23,7 +23,7 @@ const Hero = () => {
         id="gradient-canvas"
         data-transition-in
       />
-      <div className="z-50 p-7 md:p-20 flex flex-col gap-4">
+      <div className="z-50 p-7 md:p-14 lg:p-20 flex flex-col gap-4">
         <Heading>
           <>
             easy emote management,
@@ -35,7 +35,7 @@ const Hero = () => {
           possible to import them from such services like 7tv, bttv or ffz
           making it effortless process
         </Paragraph>
-        <div className="flex gap-4 mt-14">
+        <div className="flex flex-col gap-3 mt-20 md:mt-14 md:flex-row">
           <Button href="">Add to your server</Button>
           <Button>Dasboard</Button>
         </div>

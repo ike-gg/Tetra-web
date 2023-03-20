@@ -14,18 +14,22 @@ const Stats = () => {
       <Heading>Tetra stats</Heading>
       <div
         className={classNames(
-          "flex flex-col text-center",
-          "md:grid md:grid-cols-3 md:gap-10"
+          "flex flex-col text-center gap-5",
+          "md:grid md:grid-cols-3 lg:gap-10 md:gap-4"
         )}
       >
         {statistics.map(({ name, value }) => {
           return (
             <article
               key={name}
-              className="bg-gradient-to-bl to-tetra-500/20 from-black p-10 rounded-lg "
+              className="bg-gradient-to-bl from-tetra-600 to-black p-0.5 rounded-lg "
             >
-              <Heading className="text-5xl md:text-5xl">{value}</Heading>
-              <Paragraph>{name}</Paragraph>
+              <div className="bg-black py-10 rounded-lg text-center overflow-hidden">
+                <Heading className="text-4xl md:text-2xl lg:text-4xl">
+                  {value}
+                </Heading>
+                <Paragraph>{name}</Paragraph>
+              </div>
             </article>
           );
         })}

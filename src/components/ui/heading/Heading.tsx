@@ -1,22 +1,25 @@
 import classNames from "classnames";
 import { FC } from "react";
+import { motion } from "framer-motion";
 
 interface Props {
   children: string | JSX.Element;
   className?: string;
+  layoutId?: string;
 }
 
-const Heading: FC<Props> = ({ children, className }) => {
+const Heading: FC<Props> = ({ children, className, layoutId }) => {
   return (
-    <h2
+    <motion.h2
       className={classNames(
-        "font-heading text-3xl leading-normal",
-        "md:text-4xl md:leading-normal",
-        className
+        className,
+        "font-heading text-3xl leading-normal tracking-wide",
+        "md:text-4xl md:leading-normal"
       )}
+      layoutId={layoutId}
     >
       {children}
-    </h2>
+    </motion.h2>
   );
 };
 
