@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      transitionProperty: {
+        filter: "filter",
+      },
       colors: {
         tetra: {
           50: "#000000",
@@ -14,6 +17,9 @@ module.exports = {
           700: "#f45a22",
           800: "#f4492b",
           900: "#f33733",
+        },
+        blackplus: {
+          900: "#080808",
         },
       },
     },
