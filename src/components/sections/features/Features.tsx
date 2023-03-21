@@ -18,7 +18,7 @@ const Features = () => {
   };
 
   useEffect(() => {
-    document.body.style.overflow = activeId ? "hidden" : "auto";
+    // document.body.style.overflow = activeId ? "hidden" : "auto";
   }, [activeId]);
 
   const featuresElements = featuresData.map((feature) => {

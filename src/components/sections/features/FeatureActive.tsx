@@ -1,5 +1,9 @@
+import ItemHeading from "@/components/ui/heading/ItemHeading";
+import Label from "@/components/ui/label/Label";
+import Paragraph from "@/components/ui/paragraph/Paragraph";
+import classNames from "classnames";
 import { motion } from "framer-motion";
-import { FC } from "react";
+import { FC, MouseEvent } from "react";
 import { RiArrowLeftLine } from "react-icons/ri";
 import featuresData from "./featuresData";
 
@@ -13,7 +17,11 @@ const FeatureActive: FC<Props> = ({ activeId, discardHandler }) => {
 
   if (!feature) return <p>not found feature id</p>;
 
-  const { id, longDesc, name, videoUrl, label } = feature;
+  const { longDesc, name, videoUrl, label } = feature;
+
+  const handlePropagation = (e: MouseEvent) => {
+    e.stopPropagation();
+  };
 
   return (
     <motion.div
@@ -21,53 +29,45 @@ const FeatureActive: FC<Props> = ({ activeId, discardHandler }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="z-40 fixed w-full h-full top-0 left-0 flex justify-center items-center bg-black/70 pt-20 md:p-20"
+      className={classNames(
+        "z-40 fixed w-full h-full top-0 left-0 flex justify-center items-center bg-black/70 pt-36",
+        "md:p-12"
+      )}
     >
       <motion.div
         layoutId={activeId}
-        onClick={(e) => {
-          e.stopPropagation();
-        }}
-        className="max-h-full bg-blackplus-900 border border-neutral-700 rounded-lg overflow-y-auto max-w-screen-md w-full p-6 md:p-8 flex flex-col mt-auto gap-6 shadow-lg"
+        onClick={handlePropagation}
+        className={classNames(
+          "max-h-full bg-blackplus-900 border border-neutral-700 rounded-lg overflow-y-auto max-w-screen-md w-full p-6 pb-16 flex flex-col mt-auto gap-6 shadow-lg",
+          "md:my-auto md:p-8"
+        )}
       >
         <div className="flex items-center gap-6">
           <motion.div
             className="text-3xl opacity-50 hover:opacity-100 transition-opacity cursor-pointer"
-            onClick={() => {
-              discardHandler();
-            }}
+            onClick={discardHandler}
           >
-            {" "}
             {<RiArrowLeftLine />}
           </motion.div>
           <div>
-            <motion.span
-              layoutId={activeId + "label"}
-              className="uppercase text-sm tracking-widest font-normal opacity-60"
-            >
-              {label || "command"}
-            </motion.span>
-            <motion.h3
-              layoutId={activeId + "name"}
-              className="text-2xl font-heading tracking-wide z-50"
-            >
-              {name}
-            </motion.h3>
+            <Label layoutId={activeId + "label"}>{label}</Label>
+            <ItemHeading layoutId={activeId + "name"}>{name}</ItemHeading>
           </div>
         </div>
-
         {videoUrl && (
           <motion.video
             playsInline
-            controls
+            autoPlay
+            loop
+            muted
             src={videoUrl}
             className="rounded-md"
             layoutId={activeId + "video"}
           />
         )}
-        <motion.p className="text-lg opacity-60 tracking-wide leading-loose">
-          {longDesc}
-        </motion.p>
+        {longDesc.map((text) => (
+          <Paragraph key={text}>{text}</Paragraph>
+        ))}
       </motion.div>
     </motion.div>
   );

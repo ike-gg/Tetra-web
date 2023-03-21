@@ -3,6 +3,8 @@ import { FC, useRef } from "react";
 import { Feature } from "./featuresData";
 import { motion } from "framer-motion";
 import { RiArrowRightUpLine } from "react-icons/ri";
+import ItemHeading from "@/components/ui/heading/ItemHeading";
+import Label from "@/components/ui/label/Label";
 
 interface Props {
   featureData: Feature;
@@ -14,24 +16,25 @@ const FeatureItem: FC<Props> = ({ featureData, setActive }) => {
 
   const { name, shortDesc, label, videoUrl, height, id } = featureData;
 
-  const handleVideoHover = (isHover: boolean) => {
-    if (videoRef.current) {
-      if (isHover) videoRef.current.play();
-      if (!isHover) videoRef.current.pause();
-    }
+  const handleSetActive = () => {
+    setActive(id);
+  };
+
+  const playOnHover = () => {
+    if (!videoRef.current) return;
+    videoRef.current.play();
+  };
+
+  const pauseOnLeave = () => {
+    if (!videoRef.current) return;
+    videoRef.current.pause();
   };
 
   return (
     <motion.div
-      onMouseEnter={() => {
-        handleVideoHover(true);
-      }}
-      onMouseLeave={() => {
-        handleVideoHover(false);
-      }}
-      onClick={() => {
-        setActive(id);
-      }}
+      onMouseEnter={playOnHover}
+      onMouseLeave={pauseOnLeave}
+      onClick={handleSetActive}
       className="relative bg-blackplus-900 flex flex-col border-2 border-tetra-700/40 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-filter duration-300 cursor-pointer"
       style={{ height: `${height}rem` }}
       layoutId={id}
@@ -49,25 +52,14 @@ const FeatureItem: FC<Props> = ({ featureData, setActive }) => {
           <source src={videoUrl + "#t=0.1"} />
         </motion.video>
       )}
-      <motion.span
-        layoutId={id + "label"}
-        className="p-6 uppercase text-sm tracking-widest font-normal mb-4"
-      >
-        {label || "command"}
-      </motion.span>
+      <Label className="p-6" layoutId={id + "label"}>
+        {label}
+      </Label>
       <div className="p-6 pt-16 mt-auto rounded-lg bg-gradient-to-b from-transparent to-black">
-        <motion.h3
-          layoutId={id + "name"}
-          className="text-2xl font-heading tracking-wide"
-        >
-          {name}
-        </motion.h3>
+        <ItemHeading layoutId={id + "name"}>{name}</ItemHeading>
         <Paragraph>{shortDesc}</Paragraph>
       </div>
-      <motion.div
-        exit={{ rotate: -135 }}
-        className="absolute  bottom-5 right-5 text-xl"
-      >
+      <motion.div className="absolute bottom-5 right-5 text-xl">
         <RiArrowRightUpLine />
       </motion.div>
     </motion.div>
