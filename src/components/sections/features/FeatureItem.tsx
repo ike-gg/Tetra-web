@@ -2,9 +2,9 @@ import Paragraph from "@/components/ui/paragraph/Paragraph";
 import { FC, useRef } from "react";
 import { Feature } from "./featuresData";
 import { motion } from "framer-motion";
-import { RiArrowRightUpLine } from "react-icons/ri";
 import ItemHeading from "@/components/ui/heading/ItemHeading";
 import Label from "@/components/ui/label/Label";
+import { RxArrowRight } from "react-icons/rx";
 
 interface Props {
   featureData: Feature;
@@ -60,7 +60,7 @@ const FeatureItem: FC<Props> = ({ featureData, setActive }) => {
         <Paragraph>{shortDesc}</Paragraph>
       </div>
       <motion.div className="absolute bottom-5 right-5 text-xl">
-        <RiArrowRightUpLine />
+        <RxArrowRight />
       </motion.div>
     </motion.div>
   );

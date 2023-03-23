@@ -1,10 +1,11 @@
+import DCCommandPreview from "@/components/discord/commandPreview/CommandPreview";
 import ItemHeading from "@/components/ui/heading/ItemHeading";
 import Label from "@/components/ui/label/Label";
 import Paragraph from "@/components/ui/paragraph/Paragraph";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { FC, MouseEvent } from "react";
-import { RiArrowLeftLine } from "react-icons/ri";
+import { RxArrowLeft } from "react-icons/rx";
 import featuresData from "./featuresData";
 
 interface Props {
@@ -22,6 +23,34 @@ const FeatureActive: FC<Props> = ({ activeId, discardHandler }) => {
   const handlePropagation = (e: MouseEvent) => {
     e.stopPropagation();
   };
+
+  const description = longDesc.map((descItem) => {
+    if (typeof descItem === "string")
+      return <Paragraph key={descItem}>{descItem}</Paragraph>;
+
+    const { command, explanation, label } = descItem;
+
+    return (
+      <section key={label} className="flex flex-col gap-3">
+        <Label>{label}</Label>
+        <DCCommandPreview commandStructure={command} />
+        <ul>
+          {explanation.map((explain) => {
+            const { text, value } = explain;
+            return (
+              <li
+                className="flex py-2 border-b border-neutral-700 last:border-b-0"
+                key={text + value}
+              >
+                <h5 className="w-40 font-semibold">{value}</h5>
+                <p className="basis-full opacity-60">{text}</p>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    );
+  });
 
   return (
     <motion.div
@@ -47,7 +76,7 @@ const FeatureActive: FC<Props> = ({ activeId, discardHandler }) => {
             className="text-3xl opacity-50 hover:opacity-100 transition-opacity cursor-pointer"
             onClick={discardHandler}
           >
-            {<RiArrowLeftLine />}
+            {<RxArrowLeft />}
           </motion.div>
           <div>
             <Label layoutId={activeId + "label"}>{label}</Label>
@@ -65,9 +94,7 @@ const FeatureActive: FC<Props> = ({ activeId, discardHandler }) => {
             layoutId={activeId + "video"}
           />
         )}
-        {longDesc.map((text) => (
-          <Paragraph key={text}>{text}</Paragraph>
-        ))}
+        {description}
       </motion.div>
     </motion.div>
   );

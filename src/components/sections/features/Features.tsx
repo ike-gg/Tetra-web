@@ -1,10 +1,10 @@
 import Heading from "@/components/ui/heading/Heading";
 import featuresData from "./featuresData";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import FeatureItem from "./FeatureItem";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import FeatureActive from "./FeatureActive";
+import MasonryLayout from "@/components/layout/MasonryLayout";
 
 const Features = () => {
   const [activeId, setActiveId] = useState<string>();
@@ -32,13 +32,9 @@ const Features = () => {
   });
 
   return (
-    <motion.section className="flex flex-col gap-4">
+    <motion.section className="flex flex-col gap-12">
       <Heading>Core features of tetra</Heading>
-      <ResponsiveMasonry columnsCountBreakPoints={{ 640: 1, 768: 2 }}>
-        <Masonry columnsCount={2} gutter={"2rem"}>
-          {featuresElements}
-        </Masonry>
-      </ResponsiveMasonry>
+      <MasonryLayout>{featuresElements}</MasonryLayout>
       <AnimatePresence>
         {activeId && (
           <FeatureActive activeId={activeId} discardHandler={handleIdRemove} />
