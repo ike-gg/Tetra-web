@@ -12,8 +12,12 @@ export default function Document() {
           href="https://fonts.cdnfonts.com/css/monument-extended"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.cdnfonts.com/css/gg-sans-2"
+          rel="stylesheet"
+        />
       </Head>
-      <body className="bg-black text-neutral-100">
+      <body className="bg-black text-neutral-100" style={{ width: "100%" }}>
         <Main />
         <NextScript />
       </body>
