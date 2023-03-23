@@ -1,8 +1,11 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
+import { motion } from "framer-motion";
 import Hero from "@/components/sections/hero/Hero";
 import Stats from "@/components/sections/stats/Stats";
 import Features from "@/components/sections/features/Features";
+import ProjectDetails from "@/components/sections/projectdetails/ProjectDetails";
+import TransitionWrapper from "@/components/animations/TransitionWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +18,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col gap-20 mt-6 mb-96">
+      <main className="flex flex-col gap-20 mt-6">
         <Hero />
         <Stats />
         <Features />
+        <ProjectDetails />
       </main>
     </>
   );
