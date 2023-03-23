@@ -9,6 +9,22 @@ const Stats = () => {
     { name: "Emotes added", value: "9000+" },
   ];
 
+  const statsElement = statistics.map(({ name, value }) => {
+    return (
+      <article
+        key={name}
+        className="bg-gradient-to-bl from-tetra-600 to-black p-0.5 rounded-lg"
+      >
+        <div className="bg-black py-10 rounded-lg text-center overflow-hidden">
+          <Heading className="text-4xl md:text-2xl lg:text-4xl">
+            {value}
+          </Heading>
+          <Paragraph>{name}</Paragraph>
+        </div>
+      </article>
+    );
+  });
+
   return (
     <section className="flex flex-col gap-8">
       <Heading>Tetra stats</Heading>
@@ -18,21 +34,7 @@ const Stats = () => {
           "md:grid md:grid-cols-3 lg:gap-10 md:gap-4"
         )}
       >
-        {statistics.map(({ name, value }) => {
-          return (
-            <article
-              key={name}
-              className="bg-gradient-to-bl from-tetra-600 to-black p-0.5 rounded-lg "
-            >
-              <div className="bg-black py-10 rounded-lg text-center overflow-hidden">
-                <Heading className="text-4xl md:text-2xl lg:text-4xl">
-                  {value}
-                </Heading>
-                <Paragraph>{name}</Paragraph>
-              </div>
-            </article>
-          );
-        })}
+        {statsElement}
       </div>
     </section>
   );
