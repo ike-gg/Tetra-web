@@ -15,3 +15,24 @@
   background-color: black;
   color: #f45a22;
 }
+
+::-webkit-scrollbar {
+  position: absolute;
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff4f1420;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4f14be;
+}
