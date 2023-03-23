@@ -1,5 +1,6 @@
-import { motion } from "framer-motion";
+import { motion, MotionConfig, MotionConfigContext } from "framer-motion";
 import { FC } from "react";
+import Footer from "./footer/Footer";
 import Navbar from "./navbar/Navbar";
 
 interface Props {
@@ -8,9 +9,10 @@ interface Props {
 
 const RootLayout: FC<Props> = ({ children }) => {
   return (
-    <motion.div className="max-w-screen-xl mx-auto  px-4 md:px-6">
+    <motion.div className="max-w-screen-xl mx-auto px-4 md:px-6 mb-8">
       <Navbar />
       {children}
+      <Footer />
     </motion.div>
   );
 };
