@@ -10,7 +10,7 @@ const Paragraph: FC<Props> = ({ children, className }) => {
   return (
     <p
       className={classNames(
-        "text-base text-white/80 tracking-wide",
+        "text-base opacity-70 tracking-wide",
         "md:text-lg",
         className
       )}
