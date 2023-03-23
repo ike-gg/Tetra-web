@@ -6,19 +6,19 @@ interface Props extends HTMLMotionProps<"h2"> {
   children: string | JSX.Element;
 }
 
-const Heading: FC<Props> = ({ children, className, ...props }) => {
+const SubHeading: FC<Props> = ({ children, className, ...props }) => {
   return (
-    <motion.h2
+    <motion.h3
       className={classNames(
         className,
-        "font-heading text-2xl leading-normal tracking-wide",
+        "font-heading text-xl leading-normal tracking-wide",
         "md:text-4xl md:leading-normal"
       )}
       {...props}
     >
       {children}
-    </motion.h2>
+    </motion.h3>
   );
 };
 
-export default Heading;
+export default SubHeading;

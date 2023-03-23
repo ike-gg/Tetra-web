@@ -13,7 +13,7 @@ const ItemHeading: FC<Props> = ({ children, className, layoutId }) => {
     <motion.h3
       layoutId={layoutId}
       className={classNames(
-        "text-lg font-heading tracking-wide leading-snug z-50",
+        "text-lg font-heading tracking-wide leading-snug",
         "md:text-2xl",
         className
       )}
