@@ -1,8 +1,9 @@
 import Button from "@/components/ui/button/Button";
 import Heading from "@/components/ui/heading/Heading";
 import Paragraph from "@/components/ui/paragraph/Paragraph";
-import { use, useEffect, useRef } from "react";
-import { Gradient } from "../../../utils/Gradient";
+import { useEffect, useRef } from "react";
+import { Gradient } from "../../../utils/Gradient.js";
+import { motion, Variants } from "framer-motion";
 
 const gradient = new Gradient();
 
@@ -17,7 +18,7 @@ const Hero = () => {
 
   return (
     <section className="relative">
-      <canvas
+      <motion.canvas
         ref={ref}
         className="shadow-inner absolute -z-10 rounded-2xl"
         id="gradient-canvas"
@@ -31,13 +32,15 @@ const Hero = () => {
           </>
         </Heading>
         <Paragraph className="max-w-lg">
-          tetra provides easy way to manage emotes on discord, making you
-          possible to import them from such services like 7tv, bttv or ffz
-          making it effortless process
+          Tetra provides an effortless way to manage emotes on Discord, making
+          it possible for you to import them from services such as 7TV, BTTV, or
+          FFZ
         </Paragraph>
-        <div className="flex flex-col gap-3 mt-20 md:mt-14 md:flex-row">
+        <div className="flex flex-col gap-4 mt-20 md:mt-14 md:flex-row">
           <Button href="">Add to your server</Button>
-          <Button>Dasboard</Button>
+          <Button disabled label="upcoming">
+            Dashboard
+          </Button>
         </div>
       </div>
     </section>
