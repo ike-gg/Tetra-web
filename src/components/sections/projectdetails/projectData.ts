@@ -66,7 +66,7 @@ export const linksData: ProjectLink[] = [
   {
     name: "Buy me a coffee",
     label: "UPCOMING",
-    desc: "If you would like to support me, you can do so here.",
+    desc: "If you would like to support me, you can do here.",
     icon: BiCoffeeTogo,
     color: "#e0a755",
     bgColor: "#FFEACC",
