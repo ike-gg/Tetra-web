@@ -16,6 +16,18 @@ export default function Document() {
           href="https://fonts.cdnfonts.com/css/gg-sans-2"
           rel="stylesheet"
         />
+        <meta
+          name="description"
+          content="Tetra Discord Bot, emote management."
+        />
+        <meta
+          name="keywords"
+          content="tetra tetrabot bot discord emotes emote 7tv bttv ffz import "
+        />
+        <meta name="theme-color" content="#000000"></meta>
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
       </Head>
       <body className="bg-black text-neutral-100" style={{ width: "100%" }}>
         <Main />
