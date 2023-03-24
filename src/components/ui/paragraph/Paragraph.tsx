@@ -1,14 +1,15 @@
 import classNames from "classnames";
+import { HTMLMotionProps, motion } from "framer-motion";
 import { FC } from "react";
 
-interface Props {
+interface Props extends HTMLMotionProps<"p"> {
   children: JSX.Element | string;
-  className?: string;
 }
 
-const Paragraph: FC<Props> = ({ children, className }) => {
+const Paragraph: FC<Props> = ({ children, className, ...props }) => {
   return (
-    <p
+    <motion.p
+      {...props}
       className={classNames(
         "text-base opacity-70 tracking-wide",
         "md:text-lg",
@@ -16,7 +17,7 @@ const Paragraph: FC<Props> = ({ children, className }) => {
       )}
     >
       {children}
-    </p>
+    </motion.p>
   );
 };
 

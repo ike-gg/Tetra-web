@@ -20,7 +20,7 @@ const ProjectDetails = () => {
         boxShadow: "inset 0 0 50px 50px black",
       }}
       className={classNames(
-        "shadow-inner bg-dotted-grid relative -top-16 flex flex-col gap-16 pt-16 pb-32"
+        "shadow-inner bg-dotted-grid relative -top-16 flex flex-col gap-16 pt-16 pb-20"
       )}
     >
       <div
