@@ -27,7 +27,7 @@ export interface ProjectLink {
 
 export const valuesData: Value[] = [
   {
-    title: "Always free",
+    title: "Free forever",
     description:
       "Tetra will always be free to use, without any hidden fees or costs. We believe in providing a valuable service to the Discord community, and we don't want anyone to be excluded because of financial barriers.",
     icon: RxAccessibility,
