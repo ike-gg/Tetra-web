@@ -12,7 +12,8 @@ const showUp = (delay: number) => {
     },
     transition: {
       type: "spring",
-      stiffness: 120,
+      stiffness: 50,
+      bounce: 0,
       duration: 0.2,
       delay,
     },
