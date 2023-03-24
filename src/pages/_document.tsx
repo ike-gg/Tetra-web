@@ -24,7 +24,8 @@ export default function Document() {
           name="keywords"
           content="tetra tetrabot bot discord emotes emote 7tv bttv ffz import "
         />
-        <meta name="theme-color" content="#000000"></meta>
+        <meta name="theme-color" content="#000000" />
+        <meta name="og:image" content="https://i.imgur.com/vkJxLA2.png" />
         <meta name="robots" content="index, follow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
