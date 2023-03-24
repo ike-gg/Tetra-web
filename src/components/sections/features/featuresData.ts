@@ -48,7 +48,7 @@ const featuresData: Feature[] = [
           },
           {
             value: "ignoretags",
-            text: "Whether the bot should suggest tags when searching for an emote",
+            text: "Specify whether bot should consider tags when searching for emotes.",
           },
         ],
       },
@@ -115,8 +115,8 @@ const featuresData: Feature[] = [
     shortDesc: "Every emote is automatically optimized if necessary.",
     longDesc: [
       "Tetra when adding an emote checks if it has the right file size, if it is too big, emote is automatically optimized.",
-      "Due to the small file size limit for emotes for discord, the final result is not always satisfying.",
-      "In the near future we will release a feature that will allow you to manually correct the optimization to make emote looks good.",
+      "Due to the small file size limit for emotes on discord, the final result is not always satisfying.",
+      "In the near future we will release a feature that will allow you to manually correct the optimization to make emote looks better.",
     ],
     videoUrl:
       "https://cdn.discordapp.com/attachments/1087185070583980093/1088526069558157312/autoopt.mp4",
@@ -155,11 +155,10 @@ const featuresData: Feature[] = [
     id: "scalingopt",
     height: 16,
     label: "FEATURE",
-    name: "Scaling options",
-    shortDesc: "Choose scaling option for emote",
+    name: "Fitting options",
+    shortDesc: "Choose fitting option for emote",
     longDesc: [
-      "While adding an emote, you can choose what scale it looks best in.",
-      'You can choose from "Stretch to fit" and "Center and crop to fit"',
+      'While adding an emote, you can choose how it fits best. You can choose from "Stretch to fit" and "Center and crop to fit"',
     ],
     videoUrl:
       "https://cdn.discordapp.com/attachments/1087185070583980093/1088526059886088302/scaleop.mp4",
@@ -171,7 +170,7 @@ const featuresData: Feature[] = [
     name: "Add twitch emotes",
     shortDesc: "Fetch sub emotes from twitch channel.",
     longDesc: [
-      "Easily import sub emotes from your favourite twitch channels.",
+      "Easily import sub emotes from your favourite twitch channel.",
       {
         label: "add sub emote",
         command: [
