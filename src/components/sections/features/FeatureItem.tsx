@@ -35,6 +35,7 @@ const FeatureItem: FC<Props> = ({ featureData, setActive }) => {
       onMouseEnter={playOnHover}
       onMouseLeave={pauseOnLeave}
       onClick={handleSetActive}
+      whileHover={{ scale: 1.02 }}
       className="relative bg-blackplus-900 flex flex-col border-2 border-tetra-700/40 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-filter duration-300 cursor-pointer"
       style={{ height: `${height}rem` }}
       layoutId={id}
