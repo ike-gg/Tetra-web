@@ -1,6 +1,6 @@
 import AnimateCounter from "@/components/animations/AnimateCounter";
 import onScreen from "@/components/animations/onScreen";
-import showUp from "@/components/animations/ShowUp";
+import showUp from "@/components/animations/showUp";
 import Heading from "@/components/ui/heading/Heading";
 import Paragraph from "@/components/ui/paragraph/Paragraph";
 import useMouseGradient from "@/hooks/useMouseGradient";

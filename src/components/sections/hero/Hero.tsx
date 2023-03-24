@@ -4,7 +4,7 @@ import Paragraph from "@/components/ui/paragraph/Paragraph";
 import { useEffect, useRef } from "react";
 import { Gradient } from "../../../utils/Gradient.js";
 import { motion, Variants } from "framer-motion";
-import showUp from "@/components/animations/ShowUp";
+import showUp from "../../animations/showUp";
 
 const gradient = new Gradient();
 
