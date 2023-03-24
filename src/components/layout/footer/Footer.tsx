@@ -31,7 +31,7 @@ const Footer = () => {
           by <span className="text-tetra-600">@ike</span>
         </a>
       </header>
-      <main className="flex flex-col md:flex-row gap-12">{linksList}</main>
+      <main className="flex flex-wrap gap-12">{linksList}</main>
     </footer>
   );
 };
