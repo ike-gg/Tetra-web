@@ -3,7 +3,6 @@ import onScreen from "@/components/animations/onScreen";
 import showUp from "@/components/animations/showUp";
 import Heading from "@/components/ui/heading/Heading";
 import Paragraph from "@/components/ui/paragraph/Paragraph";
-import useMouseGradient from "@/hooks/useMouseGradient";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 
