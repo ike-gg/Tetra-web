@@ -29,8 +29,10 @@ module.exports = {
       backgroundImage: {
         "dotted-grid":
           "radial-gradient(circle, #555555 1px, rgba(0, 0, 256, 0) 1px);",
-        "lined-grid":
+        "lined-grid-black":
           "linear-gradient(to right, #222222 1px, transparent 1px),linear-gradient(to bottom, #222222 1px, transparent 1px)",
+        "lined-grid-white":
+          "linear-gradient(to right, #DDDDDD50 1px, transparent 1px),linear-gradient(to bottom, #DDDDDD50 1px, transparent 1px)",
       },
     },
     fontFamily: {
