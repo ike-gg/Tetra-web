@@ -30,7 +30,6 @@ const EmotePlayground: FC<Props> = ({ interaction }) => {
         {originalEmote && (
           <BufferImage
             className="w-52 max-h-52 object-contain"
-            showSize
             buffer={originalEmote}
           />
         )}
@@ -38,7 +37,6 @@ const EmotePlayground: FC<Props> = ({ interaction }) => {
         {modifiedEmote && (
           <BufferImage
             className="w-52 max-h-52 object-contain"
-            showSize
             buffer={modifiedEmote}
           />
         )}
