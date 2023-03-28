@@ -11,8 +11,8 @@ const SubHeading: FC<Props> = ({ children, className, ...props }) => {
     <motion.h3
       className={classNames(
         className,
-        "font-heading text-xl leading-normal tracking-wide",
-        "md:text-4xl md:leading-normal"
+        "font-heading text-lg leading-normal tracking-wide",
+        "md:text-2xl md:leading-normal"
       )}
       {...props}
     >

@@ -27,7 +27,7 @@ export default function Document() {
         <meta name="theme-color" content="#000000" />
         <meta name="og:image" content="https://i.imgur.com/vkJxLA2.png" />
         <meta name="robots" content="index, follow" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
       </Head>
       <body className="bg-black text-neutral-100" style={{ width: "100%" }}>
