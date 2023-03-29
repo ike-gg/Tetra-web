@@ -4,6 +4,7 @@ import { useEmoteDispatch } from "@/app/taskStore/taskStore";
 import { EmoteActions } from "@/app/taskStore/emoteSlice";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { API_URL } from "@/constants";
 
 const SubmitProcess = () => {
   const { originalEmote } = useEmoteSelector((state) => state.emote);
@@ -29,7 +30,7 @@ const SubmitProcess = () => {
 
   const handleSubmit = async () => {
     if (!originalEmote) return;
-    const response = await fetch("https://api.tetra.lol/buffer/process", {
+    const response = await fetch(`${API_URL}/buffer/process`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

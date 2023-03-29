@@ -1,6 +1,7 @@
 import { EmoteActions } from "@/app/taskStore/emoteSlice";
 import { useEmoteDispatch, useEmoteSelector } from "@/app/taskStore/taskStore";
 import EmoteEditor from "@/components/emoteEditor/EmoteEditor";
+import { API_URL } from "@/constants";
 import { TaskPostProcess } from "@/types/tetraApi/TaskPostProcess";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -16,9 +17,7 @@ const EditTaskPage = () => {
     if (!isReady) return;
 
     const fetchTaskDetails = async () => {
-      const response = await fetch(
-        `https://api.tetra.lol/task/${query.taskId}`
-      );
+      const response = await fetch(`${API_URL}/task/${query.taskId}`);
 
       if (!response.ok) {
         console.log("error");

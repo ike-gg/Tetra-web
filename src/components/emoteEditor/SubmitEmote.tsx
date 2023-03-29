@@ -1,5 +1,6 @@
 import { useEmoteSelector } from "@/app/taskStore/taskStore";
 import Button from "@/components/ui/button/Button";
+import { API_URL } from "@/constants";
 import { useRouter } from "next/router";
 import { FC } from "react";
 import Label from "../ui/label/Label";
@@ -15,7 +16,7 @@ const SubmitEmote: FC<Props> = ({ taskId }) => {
     useEmoteSelector((state) => state.emote);
 
   const submitEmote = async () => {
-    const response = await fetch("https://api.tetra.lol/task", {
+    const response = await fetch(`${API_URL}/task`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
