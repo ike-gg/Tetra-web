@@ -1,1 +1,1 @@
-export const API_URL = "https://tetra.onrender.com";
+export const API_URL = "https://api.tetra.lol";
