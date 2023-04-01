@@ -30,7 +30,7 @@ const SubmitProcess = () => {
 
   const handleSubmit = async () => {
     if (!originalEmote) return;
-    const response = await fetch(`https://tetra-buffer.vercel.app/api/hello`, {
+    const response = await fetch(`/api/buffer`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
