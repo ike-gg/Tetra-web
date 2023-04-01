@@ -98,3 +98,11 @@ export default async function handler(
   //   optimizationLevel: 3,
   // })(processedBuffer);
 }
+
+export const config = {
+  api: {
+    bodyParser: {
+      sizeLimit: "10mb",
+    },
+  },
+};
