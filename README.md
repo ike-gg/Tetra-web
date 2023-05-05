@@ -7,7 +7,7 @@
   <p align="center">
     Web app for the Tetra project
     <br />
-    <a href="https://tetra.lol/invite">Website</a>
+    <a href="https://tetra.lol/invite">Check Live</a>
     ·
     <a href="https://github.com/ike-gg/Tetra">Tetra Project</a>
     ·
@@ -17,7 +17,7 @@
 
 ## About Tetra Web
 
-Tetra Web is an extension of the Tetra bot project, created to expand the possibilities of the Tetra bot creation process by providing users and developers with more advanced features compared to the limitations of Discord enviroment.
+Tetra Web is an extension of the Tetra bot project, created to expand the possibilities of the Tetra bot creation process by providing users and developers with more advanced features compared to the limitations of Discord environment.
 
 Using the application is optional and not required to use the bot.
 
