@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 
 const Stats = () => {
   const statistics = [
-    { name: "Active servers", from: 400, to: 500 },
-    { name: "Active users", from: 180000, to: 200000 },
-    { name: "Emotes added", from: 7500, to: 9000 },
+    { name: "Active servers", from: 850, to: 1050 },
+    { name: "Active users", from: 400000, to: 430000 },
+    { name: "Emotes added", from: 22500, to: 25000 },
   ];
 
   const statsElement = statistics.map(({ name, from, to }, index) => {
