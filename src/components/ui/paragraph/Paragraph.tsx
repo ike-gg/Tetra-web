@@ -1,9 +1,9 @@
 import classNames from "classnames";
 import { HTMLMotionProps, motion } from "framer-motion";
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 
 interface Props extends HTMLMotionProps<"p"> {
-  children: JSX.Element | string;
+  children: JSX.Element | string | ReactNode;
 }
 
 const Paragraph: FC<Props> = ({ children, className, ...props }) => {
