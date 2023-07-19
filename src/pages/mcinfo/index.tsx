@@ -72,7 +72,7 @@ const McInfoPage = () => {
           technicznie krok po kroku tutaj:
           <Button
             className="bg-tetra-600 text-white"
-            href="https://youtube.com"
+            href="https://youtu.be/lTE6msgYyAc"
           >
             poradnik dla srednio rozgarnietych zyciowo i technicznie
           </Button>
