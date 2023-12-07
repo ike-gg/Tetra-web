@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -28,6 +28,7 @@
     "react-redux": "^8.0.5",
     "react-responsive-masonry": "^2.1.7",
     "sharp": "^0.32.0",
+    "swr": "^2.1.2",
     "typescript": "5.0.2"
   },
   "devDependencies": {

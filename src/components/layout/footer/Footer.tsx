@@ -4,7 +4,7 @@ import { footerData } from "./footerData";
 const Footer = () => {
   const linksList = footerData.map(({ items, name }) => {
     return (
-      <ul key={name} className="flex flex-col gap-2 ">
+      <ul key={name} className="flex flex-col gap-2">
         <h4 className="font-heading text-lg tracking-wide">{name}</h4>
         {items.map(({ href, name }) => {
           return (
@@ -24,7 +24,7 @@ const Footer = () => {
   });
 
   return (
-    <footer className="flex flex-col gap-6 p-6 md:p-12 border-4 rounded-2xl border-neutral-900">
+    <footer className="flex flex-col gap-6 md:m-2 p-8 md:p-14 border rounded-xl border-neutral-800 backdrop-blur-md bg-black/80 ">
       <header className="flex justify-between items-center">
         <Heading>Tetra</Heading>
         <a href="https://github.com/ike-gg" target="_blank">

@@ -1,14 +1,22 @@
+export type SupportedEmotesOrigin =
+  | "discord"
+  | "7tv"
+  | "twitch"
+  | "bttv"
+  | "ffz";
+
 export interface TetraApiEmote {
-  animated: boolean;
-  author?: string;
-  data: {
-    type: "Buffer";
-    data: any;
-  };
   id: string;
   name: string;
-  origin: string;
-  preview: string;
+  animated: boolean;
+  origin: SupportedEmotesOrigin;
+  author: string;
+  data: Buffer;
+  finalData: Buffer;
+  file: {
+    url: string;
+    preview: string;
+  };
   delay: number[];
   pages: number;
 }

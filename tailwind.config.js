@@ -2,6 +2,11 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ["Monument Extended", "sans-serif"],
+        sans: ["Clash Display", `sans-serif`],
+        discord: ["gg sans Normal", "sans-serif"],
+      },
       transitionProperty: {
         filter: "filter",
       },
@@ -33,12 +38,9 @@ module.exports = {
           "linear-gradient(to right, #222222 1px, transparent 1px),linear-gradient(to bottom, #222222 1px, transparent 1px)",
         "lined-grid-white":
           "linear-gradient(to right, #DDDDDD50 1px, transparent 1px),linear-gradient(to bottom, #DDDDDD50 1px, transparent 1px)",
+        shiny:
+          "linear-gradient(210deg, rgba(0,0,0,1) 0%, rgba(9,9,9,1) 16%, rgba(17,17,17,1) 26%, rgba(1,1,1,1) 53%, rgba(0,0,0,1) 100%);",
       },
-    },
-    fontFamily: {
-      heading: ["Monument Extended", "sans-serif"],
-      sans: ["Clash Display", `sans-serif`],
-      discord: ["gg sans Normal", "sans-serif"],
     },
   },
   plugins: [],

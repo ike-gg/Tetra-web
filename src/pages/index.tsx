@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import Hero from "@/components/sections/hero/Hero";
 import Stats from "@/components/sections/stats/Stats";
 import Features from "@/components/sections/features/Features";
@@ -25,16 +24,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col gap-20 mt-6 min-h-screen">
-        <Hero />
-        {showContent && (
-          <>
-            <Stats />
-            <Features />
-            <ProjectDetails />
-          </>
-        )}
-      </main>
+      <Hero />
+      {showContent && (
+        <>
+          <Stats />
+          <Features />
+          <ProjectDetails />
+        </>
+      )}
     </>
   );
 }
