@@ -32,7 +32,9 @@ const Button: FC<Props> = ({
           className
         )}
       >
-        {children} {<RxArrowTopRight />}
+        {children}
+        {label && <Label>{label}</Label>}
+        {<RxArrowTopRight />}
       </motion.a>
     );
   }

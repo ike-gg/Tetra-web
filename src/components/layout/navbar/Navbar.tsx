@@ -11,13 +11,13 @@ const Navbar = () => {
   const links = [
     { name: "Support", href: "https://discord.com/invite/dNqBstzs4p" },
     { name: "GitHub", href: "https://github.com/ike-gg/tetra" },
-    { name: "Dashboard", href: "", label: "upcoming" },
+    { name: "Panel", href: "https://panel.tetra.lol", label: "NEW" },
   ];
 
   return (
     <motion.nav
       {...showDown(0.2)}
-      className="sticky top-2 backdrop-blur-md z-30 bg-black/80 rounded-xl md:m-2 p-4 md:p-6 md:px-8 flex justify-between items-center border border-neutral-800 shadow-lg shadow-neutral-900/50"
+      className="sticky top-2 backdrop-blur-md z-30 bg-black/80 rounded-xl p-4 md:p-6 md:px-8 flex justify-between items-center border border-neutral-800"
     >
       <Heading>Tetra</Heading>
       <div className="hidden md:flex gap-6 font-normal text-lg">

@@ -191,12 +191,10 @@ const featuresData: Feature[] = [
   {
     id: "webedit",
     height: 18,
-    name: "Edit emotes through website",
-    shortDesc: "Expand possibilites with web version of tetra",
-    longDesc: [
-      "Sometimes automatically optimising just doesnt work. There are few factors about gifs and their sizes- colors, resolution and length. Stay tuned! 👀",
-    ],
-    label: "coming later",
+    name: "Tetra Panel",
+    shortDesc: "Expand possibilites with Tetra Panel",
+    longDesc: ["https://panel.tetra.lol 🤭"],
+    label: "Check out",
   },
 ];
 

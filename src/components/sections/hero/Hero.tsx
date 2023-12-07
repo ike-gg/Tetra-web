@@ -46,8 +46,8 @@ const Hero = () => {
           className="flex flex-col gap-4 mt-20 md:mt-14 md:flex-row opacity-70"
         >
           <Button href={BOT_INVITE_LINK}>Add to your server</Button>
-          <Button disabled label="upcoming">
-            Dashboard
+          <Button href={"https://panel.tetra.lol"} label="CHECK OUT">
+            Panel
           </Button>
         </motion.div>
       </motion.div>
