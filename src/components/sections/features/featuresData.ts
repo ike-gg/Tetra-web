@@ -105,7 +105,7 @@ const featuresData: Feature[] = [
       },
     ],
     videoUrl:
-      "https://cdn.discordapp.com/attachments/1087185070583980093/1088526043687698482/addemote.mp4",
+      "https://cdn.discordapp.com/attachments/1087185070583980093/1088526015946563654/subemote.mp4?ex=67251a5a&is=6723c8da&hm=421ae73ce35b3b24eeaef12bc7cd9f43d7099afe759b3f277744a307c241c223&",
   },
   {
     id: "autooptimize",
@@ -119,7 +119,7 @@ const featuresData: Feature[] = [
       "In the near future we will release a feature that will allow you to manually correct the optimization to make emote looks better.",
     ],
     videoUrl:
-      "https://cdn.discordapp.com/attachments/1087185070583980093/1088526069558157312/autoopt.mp4",
+      "https://cdn.discordapp.com/attachments/1087185070583980093/1088526069558157312/autoopt.mp4?ex=67251a66&is=6723c8e6&hm=1928afa8cff3caabfde7c3a65fc6a6ee2c44dc561b38b15d94e03bb9e70e84d5&",
   },
   {
     id: "tiktok",
@@ -149,7 +149,7 @@ const featuresData: Feature[] = [
     ],
     label: "EXPERIMENTAL",
     videoUrl:
-      "https://cdn.discordapp.com/attachments/1087185070583980093/1088526064487247972/tiktok.mp4",
+      "https://cdn.discordapp.com/attachments/1087185070583980093/1088526064487247972/tiktok.mp4?ex=67251a65&is=6723c8e5&hm=2f68995cc35aa3b39129f2200e891aed1e3b48249ceae9648151ae015b8317df&",
   },
   {
     id: "scalingopt",
@@ -161,7 +161,7 @@ const featuresData: Feature[] = [
       'While adding an emote, you can choose how it fits best. You can choose from "Stretch to fit" and "Center and crop to fit"',
     ],
     videoUrl:
-      "https://cdn.discordapp.com/attachments/1087185070583980093/1088526059886088302/scaleop.mp4",
+      "https://cdn.discordapp.com/attachments/1087185070583980093/1088526059886088302/scaleop.mp4?ex=67251a64&is=6723c8e4&hm=5e92d1bc1297884b5c0cef53498df087edd0e6b981209ae36c1e6fc7c87de8c2&",
   },
   {
     id: "addtwitchemotes",
