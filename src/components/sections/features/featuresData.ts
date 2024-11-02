@@ -104,8 +104,7 @@ const featuresData: Feature[] = [
         ],
       },
     ],
-    videoUrl:
-      "https://cdn.discordapp.com/attachments/1087185070583980093/1088526043687698482/addemote.mp4",
+    videoUrl: "https://maxcore.s3.eu-central-1.amazonaws.com/addemote+(1).mp4",
   },
   {
     id: "autooptimize",
@@ -148,8 +147,7 @@ const featuresData: Feature[] = [
       },
     ],
     label: "EXPERIMENTAL",
-    videoUrl:
-      "https://cdn.discordapp.com/attachments/1087185070583980093/1088526064487247972/tiktok.mp4",
+    videoUrl: "https://maxcore.s3.eu-central-1.amazonaws.com/tiktok.mp4",
   },
   {
     id: "scalingopt",
@@ -160,8 +158,7 @@ const featuresData: Feature[] = [
     longDesc: [
       'While adding an emote, you can choose how it fits best. You can choose from "Stretch to fit" and "Center and crop to fit"',
     ],
-    videoUrl:
-      "https://cdn.discordapp.com/attachments/1087185070583980093/1088526059886088302/scaleop.mp4",
+    videoUrl: "https://maxcore.s3.eu-central-1.amazonaws.com/scaleop.mp4",
   },
   {
     id: "addtwitchemotes",
@@ -185,8 +182,7 @@ const featuresData: Feature[] = [
         ],
       },
     ],
-    videoUrl:
-      "https://cdn.discordapp.com/attachments/1087185070583980093/1088526015946563654/subemote.mp4",
+    videoUrl: "https://maxcore.s3.eu-central-1.amazonaws.com/subemote.mp4",
   },
   {
     id: "webedit",
