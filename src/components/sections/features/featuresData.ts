@@ -117,8 +117,7 @@ const featuresData: Feature[] = [
       "Due to the small file size limit for emotes on discord, the final result is not always satisfying.",
       "In the near future we will release a feature that will allow you to manually correct the optimization to make emote looks better.",
     ],
-    videoUrl:
-      "https://cdn.discordapp.com/attachments/1087185070583980093/1088526069558157312/autoopt.mp4",
+    videoUrl: "https://maxcore.s3.eu-central-1.amazonaws.com/autoopt.mp4",
   },
   {
     id: "tiktokfeat",
