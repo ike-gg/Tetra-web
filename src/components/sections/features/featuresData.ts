@@ -121,7 +121,7 @@ const featuresData: Feature[] = [
       "https://cdn.discordapp.com/attachments/1087185070583980093/1088526069558157312/autoopt.mp4",
   },
   {
-    id: "tiktok",
+    id: "tiktokfeat",
     height: 20,
     name: "TikTok",
     shortDesc: "Send plain video extracted from provided link.",
