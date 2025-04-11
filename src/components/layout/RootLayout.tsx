@@ -10,9 +10,9 @@ interface Props {
 const RootLayout: FC<Props> = ({ children }) => {
   return (
     <motion.div className="max-w-screen-xl mx-auto px-4 md:px-6 mb-8">
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="flex flex-col gap-20 mt-6 min-h-screen">{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </motion.div>
   );
 };

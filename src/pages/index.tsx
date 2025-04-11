@@ -24,14 +24,27 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero />
+      <div className="flex flex-col gap-16 justify-center items-center h-screen">
+        <div className="opacity-5 relative">
+          {/* <img src="/logo.svg" className="animate-pulse duration-[5000ms]" /> */}
+          <img
+            src="/logo.svg"
+            className="animate-pulse duration-[5000ms]"
+            style={{ filter: "drop-shadow(0 0 50px #FE5101)" }}
+          />
+        </div>
+        <div className="font-mono text-neutral-600 tracking-wider">
+          SOMETHING IS COMING...
+        </div>
+      </div>
+      {/* <Hero />
       {showContent && (
         <>
           <Stats />
           <Features />
           <ProjectDetails />
         </>
-      )}
+      )} */}
     </>
   );
 }
